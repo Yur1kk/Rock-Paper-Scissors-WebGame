@@ -20,8 +20,9 @@ const getPlayerChoice = () => {
 
 const startGame = () => {
   if (gameIsRunning) {
-    
+    return;
   }
+  gameIsRunning = true;
     console.log('Game is starting...');
     const playerSelection = getPlayerChoice();
     console.log(playerSelection);
