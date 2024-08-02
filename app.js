@@ -5,6 +5,8 @@ const PAPER = 'PAPER';
 const SCISSORS = 'SCISSORS';
 const DEFAULT_USER_CHOICE = ROCK;
 
+let gameIsRunning = false;
+
 const getPlayerChoice = () => {
     const selection = prompt(`${ROCK}, ${PAPER} or ${SCISSORS}?`, '').toUpperCase();
     if (selection !== ROCK &&
@@ -17,6 +19,9 @@ const getPlayerChoice = () => {
 }
 
 const startGame = () => {
+  if (gameIsRunning) {
+    
+  }
     console.log('Game is starting...');
     const playerSelection = getPlayerChoice();
     console.log(playerSelection);
